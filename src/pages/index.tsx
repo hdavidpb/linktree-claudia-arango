@@ -20,7 +20,10 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div className=" cursor-pointer transition-all ease-in-out duration-500 w-full h-14 bg-white flex justify-center items-center rounded-lg hover:bg-transparent border-white border-2 p-4 shadow-md">
+        <a
+          href="https://calendly.com/claudia-arangonutricionista/consulta-1-vez?back=1&month=2023-07"
+          className=" cursor-pointer transition-all ease-in-out duration-500 w-full h-14 bg-white flex justify-center items-center rounded-lg hover:bg-transparent border-white border-2 p-4 shadow-md"
+        >
           <Image
             src="/calendly.png"
             alt="Tiktok"
@@ -28,16 +31,19 @@ export default function Home() {
             height={30}
             className="rounded-full"
           />
-          <a className="flex-1 text-center font-semibold">Agenda tu cita</a>
-        </div>
+          <span className="flex-1 text-center font-semibold">
+            Agenda tu cita
+          </span>
+        </a>
         <a
-          href="https://www.tiktok.com/@claudiaanutricionista?_t=8dugALVl7ZN&_r=1"
+          href="https://api.whatsapp.com/send?phone=573172557677&text=%C2%A1Hola%2C%20estoy%20interesado%2Fa%20en%20una%20consulta%20nutricional!"
           target="_blank"
           className="cursor-pointer transition-all ease-in-out duration-500 w-full h-14 bg-white flex justify-center items-center rounded-lg hover:bg-transparent border-white border-2 p-4 shadow-md"
         >
-          <Image src="/tiktok.png" alt="Tiktok" width={30} height={30} />
-          <span className="flex-1 text-center font-semibold">TikTok</span>
+          <Image src="/whatsapp.png" alt="Tiktok" width={30} height={30} />
+          <span className="flex-1 text-center font-semibold">Whatsapp</span>
         </a>
+
         <a
           href="https://instagram.com/claudia_arango_nutricionista?igshid=MmIzYWVlNDQ5Yg=="
           target="_blank"
@@ -47,12 +53,12 @@ export default function Home() {
           <span className="flex-1 text-center font-semibold">Instagram</span>
         </a>
         <a
-          href="https://api.whatsapp.com/send?phone=573172557677&text=%C2%A1Hola%2C%20estoy%20interesado%2Fa%20en%20una%20consulta%20nutricional!"
+          href="https://www.tiktok.com/@claudiaanutricionista?_t=8dugALVl7ZN&_r=1"
           target="_blank"
           className="cursor-pointer transition-all ease-in-out duration-500 w-full h-14 bg-white flex justify-center items-center rounded-lg hover:bg-transparent border-white border-2 p-4 shadow-md"
         >
-          <Image src="/whatsapp.png" alt="Tiktok" width={30} height={30} />
-          <span className="flex-1 text-center font-semibold">Whatsapp</span>
+          <Image src="/tiktok.png" alt="Tiktok" width={30} height={30} />
+          <span className="flex-1 text-center font-semibold">TikTok</span>
         </a>
       </div>
     </div>
