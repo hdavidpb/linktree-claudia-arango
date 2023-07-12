@@ -26,7 +26,7 @@ export default function Home() {
           target="_blank"
         >
           <Image
-            src="/calendly.png"
+            src="/calendly1.png"
             alt="Tiktok"
             width={30}
             height={30}
@@ -44,7 +44,6 @@ export default function Home() {
           <Image src="/whatsapp.png" alt="Tiktok" width={30} height={30} />
           <span className="flex-1 text-center font-semibold">Whatsapp</span>
         </a>
-
         <a
           href="https://instagram.com/claudia_arango_nutricionista?igshid=MmIzYWVlNDQ5Yg=="
           target="_blank"
