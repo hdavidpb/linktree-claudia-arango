@@ -23,6 +23,7 @@ export default function Home() {
         <a
           href="https://calendly.com/claudia-arangonutricionista/consulta-1-vez?back=1&month=2023-07"
           className=" cursor-pointer transition-all ease-in-out duration-500 w-full h-14 bg-white flex justify-center items-center rounded-lg hover:bg-transparent border-white border-2 p-4 shadow-md"
+          target="_blank"
         >
           <Image
             src="/calendly.png"
