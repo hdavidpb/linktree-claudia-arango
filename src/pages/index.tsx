@@ -15,8 +15,8 @@ export default function Home() {
           />
           <div>
             <h1 className="text-xl font-semibold shadow-2xl">Claudia Arango</h1>
-            <h2 className="text-lg  font-medium shadow-2xl text-center">
-              Nuticionista
+            <h2 className="text-lg font-medium   shadow-2xl text-center">
+              Nutricionista
             </h2>
           </div>
         </div>
