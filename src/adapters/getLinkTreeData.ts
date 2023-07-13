@@ -27,6 +27,7 @@ export const adapterLinkTreeData = (response: LinkTreeResponse) => {
     title: response.content[0][0],
     subtitle: response.content[0][1],
     description: response.content[0][2] ?? "",
+    photo: response.content[0][3] ?? "/claudia1.jpg",
     links,
   };
 

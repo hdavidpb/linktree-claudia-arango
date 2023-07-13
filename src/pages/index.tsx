@@ -9,7 +9,7 @@ export default function Home({ data }: { data: ILinkTreeData }) {
       <div className="flex flex-col justify-center items-center gap-2 mt-14 bg-[#ffffff59] w-full rounded-lg p-3 md:w-[640px]">
         <div className="flex flex-col justify-center items-center gap-4 w-full mb-3">
           <Image
-            src="/claudia1.jpg"
+            src={data.photo}
             alt="Claudia arango"
             width={110}
             height={110}

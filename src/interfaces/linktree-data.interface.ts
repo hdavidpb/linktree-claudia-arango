@@ -1,4 +1,5 @@
 export interface ILinkTreeData {
+  photo: string;
   title: string;
   subtitle: string;
   description: string;
