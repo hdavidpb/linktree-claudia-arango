@@ -4,25 +4,6 @@ import { GetStaticProps } from "next";
 import Image from "next/image";
 
 export default function Home({ data }: { data: ILinkTreeData }) {
-  // const [isloading, setIsLoading] = useState(false);
-  // const [data, setData] = useState<ILinkTreeData>();
-  // const fetchData = () => {
-  //   setIsLoading(true);
-  //   fetch(
-  //     "https://script.google.com/macros/s/AKfycbyJ8cLw6CtpRc4nQA8fqnV1gTfdT_CC9KFsbcwChzIkYZN_QxgMcWm1oDB_L26vkNA/exec"
-  //   )
-  //     .then((res) => res.json())
-  //     .then((response) => {
-  //       setIsLoading(false);
-  //       const data = adapterLinkTreeData(response);
-  //       setData(data);
-  //     });
-  // };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-
   return (
     <div className="w-full h-screen bg-pink-400 flex flex-col justify-start items-center gap-5  bg-[url('/bg.jpeg')] bg-no-repeat bg-center bg-cover">
       <div className="flex flex-col justify-center items-center gap-2 mt-14 bg-[#ffffff59] w-full rounded-lg p-3 md:w-[640px]">
@@ -35,11 +16,18 @@ export default function Home({ data }: { data: ILinkTreeData }) {
             priority={true}
             className="w-[110px] h-[110px] object-cover rounded-full shadow-2xl shadow-slate-100"
           />
-          <div>
-            <h1 className="text-xl font-semibold shadow-2xl">{data.title}</h1>
+          <div className="w-full flex flex-col justify-center items-center">
+            <h1 className="text-xl font-semibold shadow-2xl text-center">
+              {data.title}
+            </h1>
             <h2 className="text-lg font-medium   shadow-2xl text-center">
               {data.subtitle}
             </h2>
+            {data.description && data.description !== "descrición" && (
+              <p className="text-sm text-center w-[70%] italic">
+                {`❝${data.description}❞`}
+              </p>
+            )}
           </div>
         </div>
         {data.links.map((link) => (
