@@ -3,6 +3,7 @@ export interface ILinkTreeData {
   title: string;
   subtitle: string;
   description: string;
+  background: string;
   links: ILink[];
 }
 

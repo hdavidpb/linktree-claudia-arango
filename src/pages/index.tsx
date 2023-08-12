@@ -5,7 +5,10 @@ import Image from "next/image";
 
 export default function Home({ data }: { data: ILinkTreeData }) {
   return (
-    <div className="w-full h-screen bg-pink-400 flex flex-col justify-start items-center gap-5  bg-[url('/bg.jpeg')] bg-no-repeat bg-center bg-cover">
+    <div
+      style={{ backgroundImage: `url(${data.background})` }}
+      className="w-full h-screen bg-pink-400 flex flex-col justify-start items-center gap-5 bg-no-repeat bg-center bg-cover"
+    >
       <div className="flex flex-col justify-center items-center gap-2 mt-14 bg-[#ffffff59] w-full rounded-lg p-3 md:w-[640px]">
         <div className="flex flex-col justify-center items-center gap-4 w-full mb-3">
           <Image
@@ -16,15 +19,15 @@ export default function Home({ data }: { data: ILinkTreeData }) {
             priority={true}
             className="w-[110px] h-[110px] object-cover rounded-full shadow-2xl shadow-slate-100"
           />
-          <div className="w-full flex flex-col justify-center items-center">
-            <h1 className="text-xl font-semibold shadow-2xl text-center">
+          <div className="w-full flex flex-col justify-center items-center gap-1">
+            <h1 className="w-full text-xl font-semibold shadow-2xl text-center bg-[#ffffff66] p-1 rounded-sm">
               {data.title}
             </h1>
-            <h2 className="text-lg font-medium   shadow-2xl text-center">
+            <h2 className="w-full text-lg font-medium   shadow-2xl text-center bg-[#ffffff66] p-1 rounded-sm">
               {data.subtitle}
             </h2>
             {data.description && data.description !== "descrición" && (
-              <p className="text-sm text-center w-[70%] italic">
+              <p className="text-sm text-center w-[70%] italic bg-[#ffffff66] p-1 rounded-sm">
                 {`❝${data.description}❞`}
               </p>
             )}

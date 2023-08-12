@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
-import { Poppins } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
-const poppins = Poppins({
-  weight: ["200", "400", "600", "900"],
+const poppins = Open_Sans({
+  weight: ["300", "400", "600", "800"],
   subsets: ["latin"],
 });
 
