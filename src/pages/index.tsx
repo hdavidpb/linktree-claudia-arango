@@ -19,7 +19,7 @@ export default function Home({ data }: { data: ILinkTreeData }) {
             priority={true}
             className="w-[110px] h-[110px] object-cover rounded-full shadow-2xl shadow-slate-100"
           />
-          <div className="w-full flex flex-col justify-center items-center gap-1">
+          <div className="w-full flex flex-col justify-center items-cente">
             <h1 className="w-full text-xl font-semibold shadow-2xl text-center bg-[#ffffff66] p-1 rounded-sm">
               {data.title}
             </h1>
